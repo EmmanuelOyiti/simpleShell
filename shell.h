@@ -6,7 +6,7 @@
 #include <string.h>
 #include <stdbool.h>
 #include <stdlib.h>
-
+#include <sys/wait.h>
 
 void show_the_prompt(void);
 void oyiti_print(const char *print_Function);
