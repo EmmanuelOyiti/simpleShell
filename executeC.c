@@ -1,6 +1,14 @@
 #include "shell.h"
 
 /**
+<<<<<<< HEAD
+ * theExecute_command - Execute a command in a child process
+ * @command: The command to execute
+ */
+
+void theExecute_command(const char *command){
+	pid_t baby_pid = fork();
+=======
 *void theExecute_command(const char *command){
 *	pid_t baby_pid = fork();
 *
@@ -19,6 +27,7 @@
 *	}
 *}
 **/
+>>>>>>> 78b8e1602a65450cf9fb24a2dc4e7155ad39e1f9
 
 void theExecute_command(const char *command){
         pid_t baby_pid = fork();

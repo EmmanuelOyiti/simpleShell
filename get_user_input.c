@@ -1,7 +1,9 @@
 #include "shell.h"
 
-/*
-*usage: remove new lines
+/**
+ * reads_command - Reads a command from standard input.
+ * @command:    Pointer to a buffer where the command will be stored.
+ * @size:       The maximum size of the command buffer.
 */
 void reads_command(char *command, size_t size){
 	if (fgets(command, size, stdin) == NULL)
