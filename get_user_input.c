@@ -11,7 +11,7 @@ void reads_command(char *command, size_t size){
 			exit(EXIT_SUCCESS);
 		} 
 	} else {
-		oyiti_print("Error reading your input.");
+		oyiti_print("Error reading your input. \n");
 		exit(EXIT_FAILURE);
 	}
 	command[strcspn(command, "\n")]= '\0'; 

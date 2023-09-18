@@ -32,7 +32,7 @@ void theExecute_command(const char *command){
 		/** child process**/
 		char *args[140];
 		int arg_counts = 0; 
-                char *token = strok((char *)command,"");
+                char *token = strtok((char *)command,"");
 		while (token != NULL){
 		args[arg_counts++] = token;
 		token = strtok(NULL," ");
@@ -41,7 +41,7 @@ void theExecute_command(const char *command){
 
 		execvp(args[0], args);
 
-		oyiti_print("Error executing command"\n);
+		oyiti_print("Error executing command \n");
 		exit(EXIT_FAILURE);
         }
         else {
