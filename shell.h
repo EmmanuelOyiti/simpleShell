@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
-<<<<<<< HEAD
+
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <sys/stat.h>
@@ -37,11 +37,7 @@
 
 extern char **environ;
 
-=======
 #include <stdbool.h>
-#include <stdlib.h>
-#include <sys/wait.h>
->>>>>>> 78b8e1602a65450cf9fb24a2dc4e7155ad39e1f9
 
 /**
  * struct liststr - singly linked list
@@ -56,7 +52,6 @@ typedef struct liststr
 	struct liststr *next;
 } list_t;
 
-<<<<<<< HEAD
 /**
  *struct passinfo - contains pseudo-arguements to pass into a function,
  *		allowing uniform prototype for function pointer struct
@@ -239,7 +234,4 @@ int replace_alias(info_t *);
 int replace_vars(info_t *);
 int replace_string(char **, char *);
 
-#endif
-=======
 #endif /*_SHELL_H_*/
->>>>>>> 78b8e1602a65450cf9fb24a2dc4e7155ad39e1f9
