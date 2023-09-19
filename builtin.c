@@ -32,7 +32,7 @@ int exit_command(info_t * information)
  * @information: Pointer to the info_t structure.
  * Return: Always returns 0.
  */
-int change_directory_command(info_t *info)
+int change_directory_command(info_t *information)
 {
     char *current_dir, *target_dir, buffer[1024];
     int chdir_ret;

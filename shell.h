@@ -36,6 +36,7 @@
 
 extern char **environ;
 
+#include <stdbool.h>
 
 /**
  * struct liststr - singly linked list
@@ -138,7 +139,7 @@ char *starts_with(const char *, const char *);
 char *_strcat(char *, char *);
 
 /* toem_string1.c */
-char *cpy_part_string(char *, char *);
+char *_strcpy(char *, char *);
 char *_strdup(const char *);
 void _puts(char *);
 int _putchar(char);
@@ -232,4 +233,4 @@ int replace_alias(info_t *);
 int replace_vars(info_t *);
 int replace_string(char **, char *);
 
-#endif
+#endif /*_SHELL_H_*/

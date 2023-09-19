@@ -25,7 +25,7 @@ void print_error_msg(char *error_msg)
 void write_error_char(char charr)
 {
     static int i = 0;
-    static charr buf[WRITE_BUF_SIZE];
+    static char buf[WRITE_BUF_SIZE];
 
     if (charr == BUF_FLUSH || i >= WRITE_BUF_SIZE)
     {

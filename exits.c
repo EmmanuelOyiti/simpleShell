@@ -58,7 +58,7 @@ char *combine_strings(char *dest_str, char *src_str, int maximum_chars)
  * @char: The character to look for.
  * Return: A pointer to the first occurrence of c in s, or NULL if not found.
  */
-char *find_char(char *str, char char)
+char *find_char(char *str, char charr)
 {
     if (str == NULL)
     {
@@ -67,7 +67,7 @@ char *find_char(char *str, char char)
 
     do
     {
-        if (*str == char)
+        if (*str == charr)
         {
             return str;
         }

@@ -62,8 +62,8 @@ int is_an_alphabet(int c)
  */
 int strings_to_integers(char *_string)
 {
-    int i, sign = 1, flag = 0, output;
-    unsigned int result = 0;
+    int i, sign = 1, flag = 0, result;
+    unsigned int number = 0;
 
     for (i = 0; _string[i] != '\0' && flag != 2; i++)
     {
