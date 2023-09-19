@@ -55,7 +55,7 @@ int set_my_variable(info_t *information)
 
 
 /**
- * nset_my_variable - Remove an environment variable
+ * unset_my_variable - Remove an environment variable
  * @information: Structure containing potential arguments. Used to maintain
  *        constant function prototype.
  *  Return: Always 0
